@@ -28,3 +28,5 @@ sum(words[i].length) <= 3 * 105
 1 <= queries.length <= 105
 0 <= li <= ri < words.length
 """
+class Solution(object):
+    def vowelStrings(self, words, queries):
