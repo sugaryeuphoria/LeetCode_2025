@@ -31,3 +31,6 @@ sum(words[i].length) <= 3 * 105
 class Solution(object):
     def vowelStrings(self, words, queries):
         vowels = set('aeiou')
+        # Check if a word starts and ends with a vowel
+        def is_vowel_string(word):
+            return word[0] in vowels and word[-1] in vowels
