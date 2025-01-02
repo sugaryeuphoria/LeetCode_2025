@@ -34,3 +34,8 @@ class Solution(object):
         # Check if a word starts and ends with a vowel
         def is_vowel_string(word):
             return word[0] in vowels and word[-1] in vowels
+        # Precompute the valid words count as a prefix sum array
+        n = len(words)
+        prefix = [0] * (n + 1)
+        for i in range(n):
+            prefix[i + 1] = prefix[i] + (1 if is_vowel_string(words[i]) else 0)
