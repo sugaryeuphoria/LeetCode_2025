@@ -30,3 +30,4 @@ sum(words[i].length) <= 3 * 105
 """
 class Solution(object):
     def vowelStrings(self, words, queries):
+        vowels = set('aeiou')
