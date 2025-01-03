@@ -56,3 +56,6 @@ class Solution:
 
                 # Increment the valid splits counter if the condition is met
                 valid_splits += 1
+
+        # Return the total count of valid splits
+        return valid_splits
