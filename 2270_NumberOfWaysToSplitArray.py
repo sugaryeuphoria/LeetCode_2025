@@ -44,3 +44,6 @@ class Solution:
 
         # Iterate through the array, but stop before the last element
         for i in range(len(nums) - 1):
+
+            # Add the current element to the prefix sum (left side sum)
+            prefix_sum += nums[i]
