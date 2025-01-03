@@ -38,3 +38,6 @@ class Solution:
 
         # Initialize the running prefix sum for the left side of the split
         prefix_sum = 0
+
+        # Initialize the counter for valid splits
+        valid_splits = 0
