@@ -41,3 +41,6 @@ class Solution:
 
         # Initialize the counter for valid splits
         valid_splits = 0
+
+        # Iterate through the array, but stop before the last element
+        for i in range(len(nums) - 1):
