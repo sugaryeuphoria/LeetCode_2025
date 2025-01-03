@@ -47,3 +47,6 @@ class Solution:
 
             # Add the current element to the prefix sum (left side sum)
             prefix_sum += nums[i]
+
+            # Calculate the sum of the right side
+            right_sum = total_sum - prefix_sum
