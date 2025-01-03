@@ -31,3 +31,5 @@ Constraints:
 2 <= nums.length <= 105
 -105 <= nums[i] <= 105
 """
+class Solution:
+    def waysToSplitArray(self, nums):
