@@ -33,3 +33,5 @@ Constraints:
 """
 class Solution:
     def waysToSplitArray(self, nums):
+        # Calculate the total sum of the array for reference
+        total_sum = sum(nums)
