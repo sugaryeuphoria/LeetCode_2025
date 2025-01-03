@@ -53,3 +53,6 @@ class Solution:
 
             # Check if the prefix sum is greater than or equal to the right sum
             if prefix_sum >= right_sum:
+
+                # Increment the valid splits counter if the condition is met
+                valid_splits += 1
