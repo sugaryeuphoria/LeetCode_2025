@@ -50,3 +50,6 @@ class Solution:
 
             # Calculate the sum of the right side
             right_sum = total_sum - prefix_sum
+
+            # Check if the prefix sum is greater than or equal to the right sum
+            if prefix_sum >= right_sum:
