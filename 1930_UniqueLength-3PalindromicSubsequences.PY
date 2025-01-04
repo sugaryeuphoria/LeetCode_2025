@@ -57,3 +57,8 @@ class Solution(object):
 
                 # Create a set of characters between the first and last occurrences
                 middle_chars = set(s[first + 1:last])
+
+                 # Add all possible palindromes of the form c + x + c
+                # where x is any character in the middle
+                for mid in middle_chars:
+                    unique_palindromes.add((c, mid, c))
