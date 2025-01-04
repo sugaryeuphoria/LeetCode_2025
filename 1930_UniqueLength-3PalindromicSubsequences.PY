@@ -30,4 +30,9 @@ Explanation: The 4 palindromic subsequences of length 3 are:
 - "bcb" (subsequence of "bbcbaba")
 - "bab" (subsequence of "bbcbaba")
 - "aba" (subsequence of "bbcbaba")
+
+Constraints:
+
+3 <= s.length <= 105
+s consists of only lowercase English letters.
 """
