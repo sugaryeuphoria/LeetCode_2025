@@ -44,3 +44,6 @@ class Solution(object):
 
         # Iterate over each character from 'a' to 'z' (all lowercase letters)
         for char in range(26):
+
+            # Convert the character index to the actual character
+            c = chr(ord('a') + char)
