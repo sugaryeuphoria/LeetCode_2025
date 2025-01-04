@@ -36,3 +36,5 @@ Constraints:
 3 <= s.length <= 105
 s consists of only lowercase English letters.
 """
+class Solution(object):
+    def countPalindromicSubsequence(self, s):
