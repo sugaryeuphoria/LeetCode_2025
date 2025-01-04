@@ -38,3 +38,6 @@ s consists of only lowercase English letters.
 """
 class Solution(object):
     def countPalindromicSubsequence(self, s):
+
+        # To store unique palindromes of length 3
+        unique_palindromes = set()
