@@ -41,3 +41,6 @@ class Solution(object):
 
         # To store unique palindromes of length 3
         unique_palindromes = set()
+
+        # Iterate over each character from 'a' to 'z' (all lowercase letters)
+        for char in range(26):
