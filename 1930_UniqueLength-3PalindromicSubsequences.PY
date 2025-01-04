@@ -54,3 +54,6 @@ class Solution(object):
 
             # If the character appears at least twice
             if first != -1 and last != -1 and first < last:
+
+                # Create a set of characters between the first and last occurrences
+                middle_chars = set(s[first + 1:last])
