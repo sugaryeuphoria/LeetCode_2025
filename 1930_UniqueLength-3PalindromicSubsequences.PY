@@ -51,3 +51,6 @@ class Solution(object):
             # Find the first and last occurrence of the character
             first = s.find(c)
             last = s.rfind(c)
+
+            # If the character appears at least twice
+            if first != -1 and last != -1 and first < last:
