@@ -47,3 +47,7 @@ class Solution(object):
 
             # Convert the character index to the actual character
             c = chr(ord('a') + char)
+
+            # Find the first and last occurrence of the character
+            first = s.find(c)
+            last = s.rfind(c)
