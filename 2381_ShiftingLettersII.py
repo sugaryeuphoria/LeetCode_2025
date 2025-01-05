@@ -29,3 +29,5 @@ s consists of lowercase English letters.
 """
 class Solution(object):
     def shiftingLetters(self, s, shifts):
+        n = len(s)
+        delta = [0] * (n + 1)
