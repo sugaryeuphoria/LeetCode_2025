@@ -31,3 +31,10 @@ class Solution(object):
     def shiftingLetters(self, s, shifts):
         n = len(s)
         delta = [0] * (n + 1)
+
+        # Build the difference array
+        for start, end, direction in shifts:
+            change = 1 if direction == 1 else -1
+            delta[start] += change
+            if end + 1 < n:
+                delta[end + 1] -= change
