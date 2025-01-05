@@ -38,3 +38,15 @@ class Solution(object):
             delta[start] += change
             if end + 1 < n:
                 delta[end + 1] -= change
+
+                # Compute the prefix sum to get net shifts at each index
+        shift_accum = 0
+        result = []
+        for i in range(n):
+            shift_accum += delta[i]
+
+            # Apply shift to character
+            new_char = chr((ord(s[i]) - ord('a') + shift_accum) % 26 + ord('a'))
+            result.append(new_char)
+        
+        return "".join(result)
