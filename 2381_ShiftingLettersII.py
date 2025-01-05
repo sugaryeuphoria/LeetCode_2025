@@ -18,4 +18,12 @@ Input: s = "dztz", shifts = [[0,0,0],[1,1,1]]
 Output: "catz"
 Explanation: Firstly, shift the characters from index 0 to index 0 backward. Now s = "cztz".
 Finally, shift the characters from index 1 to index 1 forward. Now s = "catz".
+
+Constraints:
+
+1 <= s.length, shifts.length <= 5 * 104
+shifts[i].length == 3
+0 <= starti <= endi < s.length
+0 <= directioni <= 1
+s consists of lowercase English letters.
 """
