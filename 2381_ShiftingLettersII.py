@@ -27,3 +27,5 @@ shifts[i].length == 3
 0 <= directioni <= 1
 s consists of lowercase English letters.
 """
+class Solution(object):
+    def shiftingLetters(self, s, shifts):
