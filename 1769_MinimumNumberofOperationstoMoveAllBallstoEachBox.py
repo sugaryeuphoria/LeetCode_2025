@@ -33,3 +33,6 @@ class Solution:
         n = len(boxes)
         # Initialize the result array with zeros
         answer = [0] * n
+        # Initialize variables to track the number of balls and cumulative operations
+        ball_count = 0
+        operations = 0
