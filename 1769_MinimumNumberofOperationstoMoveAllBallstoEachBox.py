@@ -20,4 +20,9 @@ Example 2:
 Input: boxes = "001011"
 Output: [11,8,5,4,3,4]
 
+Constraints:
+
+n == boxes.length
+1 <= n <= 2000
+boxes[i] is either '0' or '1'.
 """
