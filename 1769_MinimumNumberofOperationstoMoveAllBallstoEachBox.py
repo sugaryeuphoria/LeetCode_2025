@@ -31,3 +31,5 @@ class Solution:
     def minOperations(self, boxes: str) -> List[int]:
         # Get the total number of boxes
         n = len(boxes)
+        # Initialize the result array with zeros
+        answer = [0] * n
