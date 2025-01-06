@@ -45,5 +45,22 @@ class Solution:
             # Update operations for the next box by adding the current ball count
             operations += ball_count   
             # Reset variables for the second pass
-        ball_count = 0
-        operations = 0
+            ball_count = 0
+            operations = 0
+             # Second pass: Calculate operations from right to left
+        for i in range(n - 1, -1, -1):  # Traverse the string in reverse
+            # Add the operations needed to move balls to the current box
+            answer[i] += operations
+            
+            # Update ball count with the number of balls in the current box
+            ball_count += int(boxes[i])  
+            
+            # Update operations for the next box by adding the current ball count
+            operations += ball_count    
+        
+        # Return the final array containing the minimum operations for each box
+        return answer
+
+solution = Solution()
+print(solution.minOperations("110"))       # Output: [1, 1, 3]
+print(solution.minOperations("001011"))    # Output: [11, 8, 5, 4, 3, 4]
