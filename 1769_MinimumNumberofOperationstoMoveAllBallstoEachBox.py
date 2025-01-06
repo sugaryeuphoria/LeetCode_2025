@@ -44,3 +44,6 @@ class Solution:
             ball_count += int(boxes[i]) 
             # Update operations for the next box by adding the current ball count
             operations += ball_count   
+            # Reset variables for the second pass
+        ball_count = 0
+        operations = 0
