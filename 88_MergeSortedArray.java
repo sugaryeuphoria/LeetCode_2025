@@ -57,6 +57,10 @@ class Solution {
                 p2--;
             }
             p--;
+        }while(p2>=0){
+            nums1[p] = nums2[p2];
+            p2--;
+            p--;
         }
     }
 }
