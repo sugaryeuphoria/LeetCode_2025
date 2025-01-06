@@ -40,3 +40,5 @@ class Solution:
         for i in range(n):
             # Add the operations needed to move balls to the current box
             answer[i] += operations
+            # Update ball count with the number of balls in the current box
+            ball_count += int(boxes[i])  
