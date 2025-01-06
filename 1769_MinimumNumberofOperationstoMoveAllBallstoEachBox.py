@@ -36,3 +36,5 @@ class Solution:
         # Initialize variables to track the number of balls and cumulative operations
         ball_count = 0
         operations = 0
+        # First pass: Calculate operations from left to right
+        for i in range(n):
