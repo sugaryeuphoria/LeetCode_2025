@@ -37,3 +37,8 @@ nums2.length == n
 
 Follow up: Can you come up with an algorithm that runs in O(m + n) time?
 */
+class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+
+    }
+}
