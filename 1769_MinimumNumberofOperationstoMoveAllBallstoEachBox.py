@@ -41,4 +41,6 @@ class Solution:
             # Add the operations needed to move balls to the current box
             answer[i] += operations
             # Update ball count with the number of balls in the current box
-            ball_count += int(boxes[i])  
+            ball_count += int(boxes[i]) 
+            # Update operations for the next box by adding the current ball count
+            operations += ball_count   
