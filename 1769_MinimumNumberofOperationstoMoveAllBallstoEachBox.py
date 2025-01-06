@@ -38,3 +38,5 @@ class Solution:
         operations = 0
         # First pass: Calculate operations from left to right
         for i in range(n):
+            # Add the operations needed to move balls to the current box
+            answer[i] += operations
