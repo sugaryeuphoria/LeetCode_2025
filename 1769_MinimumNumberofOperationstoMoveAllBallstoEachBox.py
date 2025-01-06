@@ -26,3 +26,4 @@ n == boxes.length
 1 <= n <= 2000
 boxes[i] is either '0' or '1'.
 """
+from typing import List
