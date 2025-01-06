@@ -29,3 +29,5 @@ boxes[i] is either '0' or '1'.
 from typing import List
 class Solution:
     def minOperations(self, boxes: str) -> List[int]:
+        # Get the total number of boxes
+        n = len(boxes)
