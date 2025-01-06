@@ -48,5 +48,11 @@ class Solution {
 
         //Set condition for initiation i.e. p1,p2 should be greater than 0
         while(p1 >= 0 && p2 >= 0){
+            //Condition when p1 > than p2
+            if(nums1[p1] > nums2[p2]){
+                nums1[p] = nums1[p1];
+                p1--;
+            }
+        }
     }
 }
