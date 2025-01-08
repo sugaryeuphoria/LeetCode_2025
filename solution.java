@@ -44,6 +44,8 @@ words[i] consists only of lowercase English letters.
 class Solution {
     public int countPrefixSuffixPairs(String[] words) {
         int count = 0;
-
+        // Loop over all pairs (i, j) where i < j
+        for (int i = 0; i < words.length; i++) {
+            for (int j = i + 1; j < words.length; j++) {
     }
 }
