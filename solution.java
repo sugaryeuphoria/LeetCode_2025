@@ -33,6 +33,12 @@ Input: words = ["abab","ab"]
 Output: 0
 Explanation: In this example, the only valid index pair is i = 0 and j = 1, and isPrefixAndSuffix("abab", "ab") is false.
 Therefore, the answer is 0.
+
+Constraints:
+
+1 <= words.length <= 50
+1 <= words[i].length <= 10
+words[i] consists only of lowercase English letters.
  */
 
 public class solution {
