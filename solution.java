@@ -47,5 +47,12 @@ class Solution {
         // Loop over all pairs (i, j) where i < j
         for (int i = 0; i < words.length; i++) {
             for (int j = i + 1; j < words.length; j++) {
+                // Check if words[i] is both prefix and suffix of words[j]
+                if (words[j].startsWith(words[i]) && words[j].endsWith(words[i])) {
+                    count++;
+                }
+            }
+        }
+        return count;
     }
 }
