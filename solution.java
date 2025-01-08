@@ -41,6 +41,9 @@ Constraints:
 words[i] consists only of lowercase English letters.
  */
 
-public class solution {
-    
+class Solution {
+    public int countPrefixSuffixPairs(String[] words) {
+        int count = 0;
+
+    }
 }
