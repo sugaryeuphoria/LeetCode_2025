@@ -23,3 +23,5 @@ words[i] and pref consist of lowercase English letters.
 """
 class Solution(object):
     def prefixCount(self, words, pref):
+        # Initialize a counter to keep track of the number of words with the prefix
+        count = 0
