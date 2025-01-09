@@ -40,3 +40,6 @@ nums is sorted in non-decreasing order.
 """
 class Solution:
     def removeDuplicates(self, nums):
+        # Edge case: empty array
+        if not nums:
+            return 0
