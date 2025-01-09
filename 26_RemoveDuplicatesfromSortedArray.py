@@ -43,3 +43,5 @@ class Solution:
         # Edge case: empty array
         if not nums:
             return 0
+        # Pointer for the position to insert the unique element
+        write_index = 1
