@@ -27,3 +27,5 @@ class Solution(object):
         count = 0
         # Loop through each word in the given list 'words'
         for word in words:
+            # Check if the current word starts with the given prefix 'pref'
+            if word.startswith(pref):
