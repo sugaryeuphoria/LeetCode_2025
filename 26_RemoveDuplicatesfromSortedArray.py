@@ -45,3 +45,5 @@ class Solution:
             return 0
         # Pointer for the position to insert the unique element
         write_index = 1
+        # Loop through the array starting from the second element
+        for i in range(1, len(nums)):
