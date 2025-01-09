@@ -49,3 +49,6 @@ class Solution:
         for i in range(1, len(nums)):
             for i in range(1, len(nums)):
                 if nums[i] != nums[i - 1]:  # Unique element
+                    # Place it at the write position
+                    nums[write_index] = nums[i]
+                    write_index += 1
