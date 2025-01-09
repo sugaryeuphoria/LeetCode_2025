@@ -52,3 +52,5 @@ class Solution:
                     # Place it at the write position
                     nums[write_index] = nums[i]
                     write_index += 1
+                    # The number of unique elements
+                    return write_index
