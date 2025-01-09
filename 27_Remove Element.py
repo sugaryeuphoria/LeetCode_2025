@@ -44,3 +44,5 @@ Constraints:
 """
 class Solution(object):
     def removeElement(self, nums, val):
+        # Initialize pointer for the valid elements
+        k = 0
