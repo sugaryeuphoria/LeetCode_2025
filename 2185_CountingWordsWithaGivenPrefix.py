@@ -31,3 +31,5 @@ class Solution(object):
             if word.startswith(pref):
                 # Increment the counter if the word starts with the prefix
                 count += 1
+                # Return the final count of words that start with the prefix
+        return count
