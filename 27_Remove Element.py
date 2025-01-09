@@ -48,3 +48,7 @@ class Solution(object):
         k = 0
         # Traverse through the array
         for i in range(len(nums)):
+            # If current element is not equal to val, move it to the valid position
+            if nums[i] != val:
+                nums[k] = nums[i]
+                k += 1
