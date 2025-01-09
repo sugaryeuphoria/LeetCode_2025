@@ -29,3 +29,5 @@ class Solution(object):
         for word in words:
             # Check if the current word starts with the given prefix 'pref'
             if word.startswith(pref):
+                # Increment the counter if the word starts with the prefix
+                count += 1
