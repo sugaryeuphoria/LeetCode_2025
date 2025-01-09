@@ -47,3 +47,5 @@ class Solution:
         write_index = 1
         # Loop through the array starting from the second element
         for i in range(1, len(nums)):
+            for i in range(1, len(nums)):
+                if nums[i] != nums[i - 1]:  # Unique element
