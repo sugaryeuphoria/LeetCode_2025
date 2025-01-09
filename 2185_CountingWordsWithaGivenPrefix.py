@@ -14,4 +14,12 @@ Example 2:
 Input: words = ["leetcode","win","loops","success"], pref = "code"
 Output: 0
 Explanation: There are no strings that contain "code" as a prefix.
+
+Constraints:
+
+1 <= words.length <= 100
+1 <= words[i].length, pref.length <= 100
+words[i] and pref consist of lowercase English letters.
 """
+class Solution(object):
+    def prefixCount(self, words, pref):
