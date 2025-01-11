@@ -28,3 +28,6 @@ from collections import Counter
 
 class Solution(object):
     def canConstruct(self, s, k):
+        # If k is greater than the length of the string, it's impossible
+        if k > len(s):
+            return False
