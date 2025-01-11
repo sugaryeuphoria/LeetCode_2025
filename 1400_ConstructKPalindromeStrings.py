@@ -24,3 +24,7 @@ Constraints:
 s consists of lowercase English letters.
 1 <= k <= 105
 """
+from collections import Counter
+
+class Solution(object):
+    def canConstruct(self, s, k):
