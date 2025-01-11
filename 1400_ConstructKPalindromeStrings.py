@@ -17,4 +17,10 @@ Example 3:
 Input: s = "true", k = 4
 Output: true
 Explanation: The only possible solution is to put each character in a separate string.
+
+Constraints:
+
+1 <= s.length <= 105
+s consists of lowercase English letters.
+1 <= k <= 105
 """
