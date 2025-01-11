@@ -31,3 +31,6 @@ class Solution(object):
         # If k is greater than the length of the string, it's impossible
         if k > len(s):
             return False
+        
+        # Count the frequency of each character
+        char_count = Counter(s)
