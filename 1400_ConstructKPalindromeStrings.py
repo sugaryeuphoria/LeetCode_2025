@@ -37,3 +37,6 @@ class Solution(object):
 
         # Count characters with odd frequencies
         odd_count = sum(1 for count in char_count.values() if count % 2 != 0)
+
+        # If there are more odd characters than k, we cannot form k palindromes
+        return odd_count <= k
