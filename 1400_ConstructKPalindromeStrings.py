@@ -34,3 +34,6 @@ class Solution(object):
         
         # Count the frequency of each character
         char_count = Counter(s)
+
+        # Count characters with odd frequencies
+        odd_count = sum(1 for count in char_count.values() if count % 2 != 0)
