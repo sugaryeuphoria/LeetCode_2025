@@ -42,3 +42,11 @@ class Solution(object):
         # If the length of s is odd, it cannot be valid
         if len(s) % 2 != 0:
             return False
+        # Left to right pass
+        open_count, close_count, flexible = 0, 0, 0
+        for i in range(len(s)):
+            if locked[i] == "1":  # Locked character
+                if s[i] == '(':
+                    open_count += 1
+                else:
+                    close_count += 1
