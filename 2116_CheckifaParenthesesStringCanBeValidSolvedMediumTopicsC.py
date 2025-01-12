@@ -50,3 +50,9 @@ class Solution(object):
                     open_count += 1
                 else:
                     close_count += 1
+                     else:  # Unlocked character
+                flexible += 1
+            
+            # Ensure at no point ')' exceeds '(' + flexible
+            if close_count > open_count + flexible:
+                return False
