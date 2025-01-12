@@ -84,4 +84,5 @@ class Solution(object):
             # Ensure at no point '(' exceeds ')' + flexible
             if open_count > close_count + flexible:
                 return False
-        
+        # If both passes succeed, the string can be valid
+        return True
