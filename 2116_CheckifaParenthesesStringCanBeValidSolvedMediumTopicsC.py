@@ -37,3 +37,5 @@ n == s.length == locked.length
 s[i] is either '(' or ')'.
 locked[i] is either '0' or '1'. 
 """
+class Solution(object):
+    def canBeValid(self, s, locked):
