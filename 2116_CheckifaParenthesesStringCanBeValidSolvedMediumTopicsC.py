@@ -29,5 +29,11 @@ Input: s = ")", locked = "0"
 Output: false
 Explanation: locked permits us to change s[0]. 
 Changing s[0] to either '(' or ')' will not make s valid.
- 
+
+Constraints:
+
+n == s.length == locked.length
+1 <= n <= 105
+s[i] is either '(' or ')'.
+locked[i] is either '0' or '1'. 
 """
