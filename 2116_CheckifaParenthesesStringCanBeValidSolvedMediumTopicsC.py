@@ -39,3 +39,6 @@ locked[i] is either '0' or '1'.
 """
 class Solution(object):
     def canBeValid(self, s, locked):
+        # If the length of s is odd, it cannot be valid
+        if len(s) % 2 != 0:
+            return False
