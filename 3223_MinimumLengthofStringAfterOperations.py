@@ -20,4 +20,9 @@ Input: s = "aa"
 Output: 2
 Explanation:
 We cannot perform any operations, so we return the length of the original string.
+
+Constraints:
+
+1 <= s.length <= 2 * 105
+s consists only of lowercase English letters.
 """
