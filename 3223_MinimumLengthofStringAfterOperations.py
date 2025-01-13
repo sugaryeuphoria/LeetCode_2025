@@ -26,3 +26,5 @@ Constraints:
 1 <= s.length <= 2 * 105
 s consists only of lowercase English letters.
 """
+class Solution:
+    def minimumLength(self, s: str) -> int:
