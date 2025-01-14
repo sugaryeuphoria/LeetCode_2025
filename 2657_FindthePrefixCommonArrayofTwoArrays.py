@@ -21,4 +21,10 @@ Output: [0,1,3]
 Explanation: At i = 0: no number is common, so C[0] = 0.
 At i = 1: only 3 is common in A and B, so C[1] = 1.
 At i = 2: 1, 2, and 3 are common in A and B, so C[2] = 3.
+
+Constraints:
+
+1 <= A.length == B.length == n <= 50
+1 <= A[i], B[i] <= n
+It is guaranteed that A and B are both a permutation of n integers.
 """
