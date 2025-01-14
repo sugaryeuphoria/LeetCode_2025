@@ -30,3 +30,5 @@ It is guaranteed that A and B are both a permutation of n integers.
 """
 # Importing List from the typing module for type hinting
 from typing import List
+class Solution:
+    def findThePrefixCommonArray(self, A: List[int], B: List[int]) -> List[int]:
