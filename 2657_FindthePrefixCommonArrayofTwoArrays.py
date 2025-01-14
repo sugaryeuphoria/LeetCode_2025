@@ -32,3 +32,5 @@ It is guaranteed that A and B are both a permutation of n integers.
 from typing import List
 class Solution:
     def findThePrefixCommonArray(self, A: List[int], B: List[int]) -> List[int]:
+        # Initialize an empty list to store the prefix common counts
+        prefix_common = []
