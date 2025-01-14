@@ -54,3 +54,5 @@ class Solution:
             seen_in_a.add(A[i])
             # Add the current element of B to the seen_in_b set
             seen_in_b.add(B[i])
+            # Append the current common count to the prefix_common list
+            prefix_common.append(common_count)
