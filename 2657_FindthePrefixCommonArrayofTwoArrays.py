@@ -56,3 +56,5 @@ class Solution:
             seen_in_b.add(B[i])
             # Append the current common count to the prefix_common list
             prefix_common.append(common_count)
+            # Return the final list containing prefix common counts
+        return prefix_common
