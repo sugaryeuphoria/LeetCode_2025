@@ -34,3 +34,6 @@ class Solution:
     def findThePrefixCommonArray(self, A: List[int], B: List[int]) -> List[int]:
         # Initialize an empty list to store the prefix common counts
         prefix_common = []
+        # Initialize sets to track numbers seen so far in A and B
+        seen_in_a = set()
+        seen_in_b = set()
