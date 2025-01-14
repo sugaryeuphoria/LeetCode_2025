@@ -37,3 +37,5 @@ class Solution:
         # Initialize sets to track numbers seen so far in A and B
         seen_in_a = set()
         seen_in_b = set()
+        # Initialize a counter for the number of common elements
+        common_count = 0
