@@ -41,3 +41,6 @@ class Solution:
         common_count = 0
         # Iterate through the indices of the arrays
         for i in range(len(A)):
+            # If the current element in A is already seen in B, increment the common count
+            if A[i] in seen_in_b:
+                common_count += 1
