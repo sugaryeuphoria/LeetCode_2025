@@ -52,3 +52,5 @@ class Solution:
                 common_count += 1
             # Add the current element of A to the seen_in_a set
             seen_in_a.add(A[i])
+            # Add the current element of B to the seen_in_b set
+            seen_in_b.add(B[i])
