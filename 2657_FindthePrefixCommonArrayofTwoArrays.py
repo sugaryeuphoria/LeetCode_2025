@@ -44,3 +44,6 @@ class Solution:
             # If the current element in A is already seen in B, increment the common count
             if A[i] in seen_in_b:
                 common_count += 1
+            # If the current element in B is already seen in A, increment the common count
+            if B[i] in seen_in_a:
+                common_count += 1
