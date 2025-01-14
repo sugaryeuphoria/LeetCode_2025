@@ -50,3 +50,5 @@ class Solution:
             # If the current elements in A and B are the same, increment the common count
             if A[i] == B[i]:
                 common_count += 1
+            # Add the current element of A to the seen_in_a set
+            seen_in_a.add(A[i])
