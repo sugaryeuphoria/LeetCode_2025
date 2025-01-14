@@ -39,3 +39,5 @@ class Solution:
         seen_in_b = set()
         # Initialize a counter for the number of common elements
         common_count = 0
+        # Iterate through the indices of the arrays
+        for i in range(len(A)):
