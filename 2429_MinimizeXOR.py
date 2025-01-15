@@ -28,3 +28,5 @@ Constraints:
 
 1 <= num1, num2 <= 109
 """
+class Solution:
+    def minimizeXor(self, num1: int, num2: int) -> int:
