@@ -23,4 +23,8 @@ Output: 3
 Explanation:
 The binary representations of num1 and num2 are 0001 and 1100, respectively.
 The integer 3 has the same number of set bits as num2, and the value 3 XOR 1 = 2 is minimal.
+
+Constraints:
+
+1 <= num1, num2 <= 109
 """
