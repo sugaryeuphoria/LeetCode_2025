@@ -30,3 +30,5 @@ Constraints:
 """
 class Solution:
     def minimizeXor(self, num1: int, num2: int) -> int:
+        # Count the set bits in num2
+        num2_bits = bin(num2).count('1')
