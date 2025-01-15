@@ -32,3 +32,6 @@ class Solution:
     def minimizeXor(self, num1: int, num2: int) -> int:
         # Count the set bits in num2
         num2_bits = bin(num2).count('1')
+
+        # Initialize x to 0 and use bits from num1
+        x = 0
