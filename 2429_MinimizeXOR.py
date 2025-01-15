@@ -43,3 +43,13 @@ class Solution:
             if num1 & (1 << i):
                 x |= (1 << i)
                 num2_bits -= 1
+
+                # If more set bits are needed, add them starting from the least significant bit
+        for i in range(32):
+            if num2_bits == 0:
+                break
+            if not (x & (1 << i)):
+                x |= (1 << i)
+                num2_bits -= 1
+        
+        return x
