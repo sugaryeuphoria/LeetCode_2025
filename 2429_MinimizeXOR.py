@@ -35,3 +35,11 @@ class Solution:
 
         # Initialize x to 0 and use bits from num1
         x = 0
+
+        # Copy set bits from num1 into x
+        for i in range(31, -1, -1):
+            if num2_bits == 0:
+                break
+            if num1 & (1 << i):
+                x |= (1 << i)
+                num2_bits -= 1
