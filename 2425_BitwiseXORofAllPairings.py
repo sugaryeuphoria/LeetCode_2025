@@ -26,3 +26,5 @@ Constraints:
 1 <= nums1.length, nums2.length <= 105
 0 <= nums1[i], nums2[j] <= 109
 """
+class Solution(object):
+    def xorAllNums(self, nums1, nums2):
