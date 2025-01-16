@@ -39,3 +39,6 @@ class Solution(object):
         if len(nums1) % 2 == 1:
             for num in nums2:
                 xor2 ^= num
+
+        # Return the final XOR
+        return xor1 ^ xor2
