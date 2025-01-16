@@ -33,3 +33,9 @@ class Solution(object):
         if len(nums2) % 2 == 1:
             for num in nums1:
                 xor1 ^= num
+
+        # Compute XOR for nums2 if len(nums1) is odd
+        xor2 = 0
+        if len(nums1) % 2 == 1:
+            for num in nums2:
+                xor2 ^= num
