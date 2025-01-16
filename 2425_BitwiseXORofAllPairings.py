@@ -28,3 +28,8 @@ Constraints:
 """
 class Solution(object):
     def xorAllNums(self, nums1, nums2):
+        # Compute XOR for nums1 if len(nums2) is odd
+        xor1 = 0
+        if len(nums2) % 2 == 1:
+            for num in nums1:
+                xor1 ^= num
