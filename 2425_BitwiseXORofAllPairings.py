@@ -20,4 +20,9 @@ All possible pairs of bitwise XORs are nums1[0] ^ nums2[0], nums1[0] ^ nums2[1],
 and nums1[1] ^ nums2[1].
 Thus, one possible nums3 array is [2,5,1,6].
 2 ^ 5 ^ 1 ^ 6 = 0, so we return 0.
+
+Constraints:
+
+1 <= nums1.length, nums2.length <= 105
+0 <= nums1[i], nums2[j] <= 109
 """
