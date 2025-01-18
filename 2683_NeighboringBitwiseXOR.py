@@ -38,10 +38,12 @@ The values in derived are either 0's or 1's
 class Solution(object):
     def doesValidArrayExist(self, derived):
         n = len(derived)
-         # Helper function to simulate and validate
+        # Helper function to simulate and validate
         def is_valid(start):
             original = [start]
             for i in range(n - 1):
                 next_value = derived[i] ^ original[-1]
                 original.append(next_value)
+                # Check circular condition
+            return original[-1] ^ original[0] == derived[-1]
             
