@@ -46,4 +46,6 @@ class Solution(object):
                 original.append(next_value)
                 # Check circular condition
             return original[-1] ^ original[0] == derived[-1]
+        # Check both possibilities for original[0]
+        return is_valid(0) or is_valid(1)
             
