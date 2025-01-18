@@ -38,3 +38,4 @@ The values in derived are either 0's or 1's
 class Solution(object):
     def doesValidArrayExist(self, derived):
         n = len(derived)
+        
