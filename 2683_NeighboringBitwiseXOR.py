@@ -35,3 +35,5 @@ n == derived.length
 1 <= n <= 105
 The values in derived are either 0's or 1's
 """
+class Solution(object):
+    def doesValidArrayExist(self, derived):
