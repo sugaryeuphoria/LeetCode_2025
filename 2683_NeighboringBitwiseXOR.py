@@ -28,4 +28,10 @@ Example 3:
 Input: derived = [1,0]
 Output: false
 Explanation: There is no valid original array that gives derived.
+
+Constraints:
+
+n == derived.length
+1 <= n <= 105
+The values in derived are either 0's or 1's
 """
