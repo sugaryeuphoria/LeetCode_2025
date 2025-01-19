@@ -38,3 +38,6 @@ class Solution(object):
 
                     # Initialize a variable to store the total amount of trapped water
                     total_water = 0
+
+                    # Directions for moving in the grid (right, down, left, up)
+                    directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
