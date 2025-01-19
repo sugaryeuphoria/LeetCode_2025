@@ -29,3 +29,9 @@ class Solution(object):
         m, n = len(heightMap), len(heightMap[0])
         visited = [[False] * n for _ in range(m)]
         min_heap = []
+        # Add all boundary cells to the heap (edges of the grid)
+        for i in range(m):
+            for j in range(n):
+                if i == 0 or j == 0 or i == m - 1 or j == n - 1:  # Check if the cell is on the boundary
+                    heapq.heappush(min_heap, (heightMap[i][j], i, j))  # Push the boundary cell into the heap with its height and position
+                    visited[i][j] = True
