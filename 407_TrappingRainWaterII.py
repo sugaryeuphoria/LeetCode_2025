@@ -19,3 +19,7 @@ n == heightMap[i].length
 1 <= m, n <= 200
 0 <= heightMap[i][j] <= 2 * 104
 """
+import heapq
+
+class Solution(object):
+    def trapRainWater(self, heightMap):
