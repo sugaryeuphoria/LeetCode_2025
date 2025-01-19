@@ -11,4 +11,11 @@ The total volume of water trapped is 4.
 Example 2:
 Input: heightMap = [[3,3,3,3,3],[3,2,2,2,3],[3,2,1,2,3],[3,2,2,2,3],[3,3,3,3,3]]
 Output: 10
+
+Constraints:
+
+m == heightMap.length
+n == heightMap[i].length
+1 <= m, n <= 200
+0 <= heightMap[i][j] <= 2 * 104
 """
