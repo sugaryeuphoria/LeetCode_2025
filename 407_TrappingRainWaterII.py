@@ -23,3 +23,9 @@ import heapq
 
 class Solution(object):
     def trapRainWater(self, heightMap):
+        #Check if the input grid is empty or has no rows
+        if not heightMap or not heightMap[0]:
+            return 0
+        m, n = len(heightMap), len(heightMap[0])
+        visited = [[False] * n for _ in range(m)]
+        min_heap = []
