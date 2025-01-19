@@ -41,3 +41,6 @@ class Solution(object):
 
                     # Directions for moving in the grid (right, down, left, up)
                     directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+                    # Process the cells in the heap (start from the boundary cells)
+        while min_heap:
+            height, x, y = heapq.heappop(min_heap)
