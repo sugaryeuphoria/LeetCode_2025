@@ -45,4 +45,11 @@ class Solution(object):
                     while min_heap:
                         height, x, y = heapq.heappop(min_heap)
                         for dx, dy in directions:  # Loop through all 4 possible directions
-                        nx, ny = x + dx, y + dy
+                            nx, ny = x + dx, y + dy
+
+                        if 0 <= nx < m and 0 <= ny < n and not visited[nx][ny]:
+                            visited[nx][ny] = True
+                            total_water += max(0, height - heightMap[nx][ny])
+                            heapq.heappush(min_heap, (max(height, heightMap[nx][ny]), nx, ny))
+        
+        return total_water
