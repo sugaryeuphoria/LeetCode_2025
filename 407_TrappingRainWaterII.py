@@ -44,4 +44,5 @@ class Solution(object):
                     # Process the cells in the heap (start from the boundary cells)
                     while min_heap:
                         height, x, y = heapq.heappop(min_heap)
-                        
+                        for dx, dy in directions:  # Loop through all 4 possible directions
+                        nx, ny = x + dx, y + dy
