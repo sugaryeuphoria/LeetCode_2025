@@ -41,3 +41,7 @@ class Solution(object):
                 # Arrays to track painted rows and columns
         row_paint_count = [0] * m
         col_paint_count = [0] * n
+
+        # Go through each number in arr
+        for i, num in enumerate(arr):
+            row, col = value_to_position[num]
