@@ -28,3 +28,5 @@ arr.length == m * n
 All the integers of arr are unique.
 All the integers of mat are unique.
 """
+class Solution(object):
+    def firstCompleteIndex(self, arr, mat):
