@@ -49,3 +49,9 @@ class Solution(object):
             # Paint the cell
             row_paint_count[row] += 1
             col_paint_count[col] += 1
+
+            # Check if a row or column is completely painted
+            if row_paint_count[row] == n or col_paint_count[col] == m:
+                return i
+        
+        return -1
