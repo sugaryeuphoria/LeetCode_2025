@@ -45,3 +45,7 @@ class Solution(object):
         # Go through each number in arr
         for i, num in enumerate(arr):
             row, col = value_to_position[num]
+
+            # Paint the cell
+            row_paint_count[row] += 1
+            col_paint_count[col] += 1
