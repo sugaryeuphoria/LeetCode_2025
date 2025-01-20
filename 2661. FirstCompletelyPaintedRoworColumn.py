@@ -37,3 +37,7 @@ class Solution(object):
         for r in range(m):
             for c in range(n):
                 value_to_position[mat[r][c]] = (r, c)
+
+                # Arrays to track painted rows and columns
+        row_paint_count = [0] * m
+        col_paint_count = [0] * n
