@@ -46,3 +46,7 @@ class Solution(object):
             r, c = value_to_position[value]
             row_count[r] += 1
             col_count[c] += 1
+
+            # Check if the row or column is completely painted
+            if row_count[r] == n or col_count[c] == m:
+                return i
