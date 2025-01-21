@@ -30,3 +30,9 @@ All the integers of mat are unique.
 """
 class Solution(object):
     def firstCompleteIndex(self, arr, mat):
+        # Map each value in mat to its (row, col) position
+        m, n = len(mat), len(mat[0])
+        value_to_position = {}
+        for i in range(m):
+            for j in range(n):
+                value_to_position[mat[i][j]] = (i, j)
