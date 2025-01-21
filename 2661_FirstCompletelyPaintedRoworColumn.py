@@ -40,3 +40,9 @@ class Solution(object):
         # Initialize counters for rows and columns
         row_count = [0] * m
         col_count = [0] * n
+
+        # Iterate through arr and paint cells
+        for i, value in enumerate(arr):
+            r, c = value_to_position[value]
+            row_count[r] += 1
+            col_count[c] += 1
