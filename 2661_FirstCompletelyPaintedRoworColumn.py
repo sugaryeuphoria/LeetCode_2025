@@ -36,3 +36,7 @@ class Solution(object):
         for i in range(m):
             for j in range(n):
                 value_to_position[mat[i][j]] = (i, j)
+
+        # Initialize counters for rows and columns
+        row_count = [0] * m
+        col_count = [0] * n
