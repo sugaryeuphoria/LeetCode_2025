@@ -37,3 +37,8 @@ n == isWater[i].length
 isWater[i][j] is 0 or 1.
 There is at least one water cell.
 """
+from collections import deque
+
+class Solution(object):
+    def highestPeak(self, isWater):
+        m, n = len(isWater), len(isWater[0])
