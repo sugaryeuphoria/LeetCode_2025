@@ -28,4 +28,12 @@ Input: isWater = [[0,0,1],[1,0,0],[0,0,0]]
 Output: [[1,1,0],[0,1,1],[1,2,2]]
 Explanation: A height of 2 is the maximum possible height of any assignment.
 Any height assignment that has a maximum height of 2 while still meeting the rules will also be accepted.
+
+Constraints:
+
+m == isWater.length
+n == isWater[i].length
+1 <= m, n <= 1000
+isWater[i][j] is 0 or 1.
+There is at least one water cell.
 """
