@@ -46,3 +46,9 @@ class Solution(object):
         height = [[-1] * n for _ in range(m)]
         # Queue for BFS
         queue = deque()
+        # Enqueue all water cells and assign them height 0
+        for i in range(m):
+            for j in range(n):
+                if isWater[i][j] == 1:
+                    height[i][j] = 0
+                    queue.append((i, j))
