@@ -52,3 +52,5 @@ class Solution(object):
                 if isWater[i][j] == 1:
                     height[i][j] = 0
                     queue.append((i, j))
+                    # Directions for the four adjacent cells (north, south, east, west)
+        directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
