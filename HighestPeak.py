@@ -57,3 +57,14 @@ class Solution(object):
         # Perform BFS to assign heights to land cells
         while queue:
             x, y = queue.popleft()
+            # Check all 4 adjacent cells
+            for dx, dy in directions:
+                nx, ny = x + dx, y + dy
+                
+                # Ensure the new coordinates are within bounds
+                if 0 <= nx < m and 0 <= ny < n and height[nx][ny] == -1:
+                    # Assign height as 1 more than the current cell's height
+                    height[nx][ny] = height[x][y] + 1
+                    queue.append((nx, ny))
+        
+        return height
