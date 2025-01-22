@@ -44,3 +44,5 @@ class Solution(object):
         m, n = len(isWater), len(isWater[0])
         # Initialize the height matrix
         height = [[-1] * n for _ in range(m)]
+        # Queue for BFS
+        queue = deque()
