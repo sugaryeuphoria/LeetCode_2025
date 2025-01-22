@@ -42,3 +42,5 @@ from collections import deque
 class Solution(object):
     def highestPeak(self, isWater):
         m, n = len(isWater), len(isWater[0])
+        # Initialize the height matrix
+        height = [[-1] * n for _ in range(m)]
