@@ -54,3 +54,6 @@ class Solution(object):
                     queue.append((i, j))
                     # Directions for the four adjacent cells (north, south, east, west)
         directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+        # Perform BFS to assign heights to land cells
+        while queue:
+            x, y = queue.popleft()
