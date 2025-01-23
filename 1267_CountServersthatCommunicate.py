@@ -34,3 +34,5 @@ n == grid[i].length
 1 <= n <= 250
 grid[i][j] == 0 or 1
 """
+class Solution(object):
+    def countServers(self, grid):
