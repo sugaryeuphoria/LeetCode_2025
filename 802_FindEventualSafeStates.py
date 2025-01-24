@@ -36,3 +36,7 @@ class Solution(object):
         # 0 -> unvisited, 1 -> visiting, 2 -> safe
         n = len(graph)
         safe = [0] * n
+         # If node is already visited and is either safe or part of a cycle
+        def dfs(node):
+            if safe[node] > 0: 
+                return safe[node] == 2
