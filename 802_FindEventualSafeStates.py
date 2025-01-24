@@ -40,3 +40,8 @@ class Solution(object):
         def dfs(node):
             if safe[node] > 0: 
                 return safe[node] == 2
+            # Mark node as visiting
+            safe[node] = 1  
+            for neighbor in graph[node]:
+                if not dfs(neighbor):
+                    return False
