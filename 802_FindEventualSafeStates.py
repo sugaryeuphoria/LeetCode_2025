@@ -33,3 +33,6 @@ The number of edges in the graph will be in the range [1, 4 * 104].
 """
 class Solution(object):
     def eventualSafeNodes(self, graph):
+        # 0 -> unvisited, 1 -> visiting, 2 -> safe
+        n = len(graph)
+        safe = [0] * n
