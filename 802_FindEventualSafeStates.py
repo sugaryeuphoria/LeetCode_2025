@@ -20,4 +20,14 @@ Input: graph = [[1,2,3,4],[1,2],[3,4],[0,4],[]]
 Output: [4]
 Explanation:
 Only node 4 is a terminal node, and every path starting at node 4 leads to node 4.
+
+Constraints:
+
+n == graph.length
+1 <= n <= 104
+0 <= graph[i].length <= n
+0 <= graph[i][j] <= n - 1
+graph[i] is sorted in a strictly increasing order.
+The graph may contain self-loops.
+The number of edges in the graph will be in the range [1, 4 * 104].
 """
