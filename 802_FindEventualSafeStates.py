@@ -45,3 +45,13 @@ class Solution(object):
             for neighbor in graph[node]:
                 if not dfs(neighbor):
                     return False
+                 safe[node] = 2  # Mark node as safe
+            return True
+        
+        # Perform DFS for all nodes
+        for i in range(n):
+            if safe[i] == 0:  # If unvisited, perform DFS
+                dfs(i)
+        
+        # Collect all safe nodes
+        return [i for i in range(n) if safe[i] == 2]
