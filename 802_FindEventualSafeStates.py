@@ -31,3 +31,5 @@ graph[i] is sorted in a strictly increasing order.
 The graph may contain self-loops.
 The number of edges in the graph will be in the range [1, 4 * 104].
 """
+class Solution(object):
+    def eventualSafeNodes(self, graph):
