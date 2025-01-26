@@ -95,3 +95,6 @@ class Solution:
 
                     # Return total distance for cyclic nodes
             return sum(dist[i] for i, v in enumerate(fa) if i == fa[fa[i]])
+        
+        # Return the max of cycle length and topological sort result
+        return max(max_cycle(favorite), topological_sort(favorite))
