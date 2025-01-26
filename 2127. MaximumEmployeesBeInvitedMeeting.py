@@ -36,4 +36,11 @@ The above figure shows how the company will invite employees 0, 1, 3, and 4, and
 Employee 2 cannot be invited because the two spots next to their favorite employee 1 are taken.
 So the company leaves them out of the meeting.
 The maximum number of employees that can be invited to the meeting is 4.
+
+Constraints:
+
+n == favorite.length
+2 <= n <= 105
+0 <= favorite[i] <= n - 1
+favorite[i] != i
 """
