@@ -81,3 +81,6 @@ class Solution:
             # Calculate in-degrees
             for v in fa:
                 indeg[v] += 1
+
+                # Queue for in-degree 0 nodes
+            q = deque([i for i, v in enumerate(indeg) if v == 0])
