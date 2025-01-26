@@ -71,3 +71,9 @@ class Solution:
                         ans = max(ans, len(cycle) - k)
                         break
             return ans
+        
+        # Function to perform topological sort
+        def topological_sort(fa):
+            n = len(fa)
+            indeg = [0] * n
+            dist = [1] * n
