@@ -77,3 +77,7 @@ class Solution:
             n = len(fa)
             indeg = [0] * n
             dist = [1] * n
+
+            # Calculate in-degrees
+            for v in fa:
+                indeg[v] += 1
