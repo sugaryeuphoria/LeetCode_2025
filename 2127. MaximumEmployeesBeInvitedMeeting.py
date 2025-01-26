@@ -51,3 +51,10 @@ class Solution:
             n = len(fa)
             vis = [False] * n
             ans = 0
+
+            # Iterate through each node
+            for i in range(n):
+                if vis[i]:
+                    continue
+                cycle = []
+                j = i
