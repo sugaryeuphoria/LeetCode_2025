@@ -44,3 +44,5 @@ n == favorite.length
 0 <= favorite[i] <= n - 1
 favorite[i] != i
 """
+class Solution:
+    def maximumInvitations(self, favorite: List[int]) -> int:
