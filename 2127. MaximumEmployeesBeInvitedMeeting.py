@@ -64,3 +64,10 @@ class Solution:
                     cycle.append(j)
                     vis[j] = True
                     j = fa[j]
+
+                    # Find the cycle length
+                for k, v in enumerate(cycle):
+                    if v == j:
+                        ans = max(ans, len(cycle) - k)
+                        break
+            return ans
