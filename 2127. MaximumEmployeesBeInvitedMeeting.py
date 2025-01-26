@@ -58,3 +58,9 @@ class Solution:
                     continue
                 cycle = []
                 j = i
+
+                # Traverse the cycle
+                while not vis[j]:
+                    cycle.append(j)
+                    vis[j] = True
+                    j = fa[j]
