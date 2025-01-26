@@ -46,3 +46,8 @@ favorite[i] != i
 """
 class Solution:
     def maximumInvitations(self, favorite: List[int]) -> int:
+        # Function to find the maximum cycle length
+        def max_cycle(fa):
+            n = len(fa)
+            vis = [False] * n
+            ans = 0
