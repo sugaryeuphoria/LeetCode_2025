@@ -84,3 +84,11 @@ class Solution:
 
                 # Queue for in-degree 0 nodes
             q = deque([i for i, v in enumerate(indeg) if v == 0])
+
+            # Perform topological sort
+            while q:
+                i = q.popleft()
+                dist[fa[i]] = max(dist[fa[i]], dist[i] + 1)
+                indeg[fa[i]] -= 1
+                if indeg[fa[i]] == 0:
+                    q.append(fa[i])
