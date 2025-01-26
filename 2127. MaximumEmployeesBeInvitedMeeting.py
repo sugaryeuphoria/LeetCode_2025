@@ -92,3 +92,6 @@ class Solution:
                 indeg[fa[i]] -= 1
                 if indeg[fa[i]] == 0:
                     q.append(fa[i])
+
+                    # Return total distance for cyclic nodes
+            return sum(dist[i] for i, v in enumerate(fa) if i == fa[fa[i]])
