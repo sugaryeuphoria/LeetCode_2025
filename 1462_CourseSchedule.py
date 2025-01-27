@@ -44,3 +44,9 @@ class Solution:
         # Mark direct prerequisites as reachable
         for u, v in prerequisites:
             reachable[u][v] = True
+            # Floyd-Warshall to compute transitive closure
+        for k in range(numCourses):
+            for i in range(numCourses):
+                for j in range(numCourses):
+                    if reachable[i][k] and reachable[k][j]:
+                        reachable[i][j] = True
