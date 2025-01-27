@@ -37,3 +37,5 @@ The prerequisites graph has no cycles.
 0 <= ui, vi <= numCourses - 1
 ui != vi
 """
+class Solution:
+    def checkIfPrerequisite(self, numCourses: int, prerequisites: List[List[int]], queries: List[List[int]]) -> List[bool]:
