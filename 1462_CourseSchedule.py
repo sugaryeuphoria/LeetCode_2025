@@ -23,4 +23,17 @@ Example 3:
 
 Input: numCourses = 3, prerequisites = [[1,2],[1,0],[2,0]], queries = [[1,0],[1,2]]
 Output: [true,true]
+
+Constraints:
+
+2 <= numCourses <= 100
+0 <= prerequisites.length <= (numCourses * (numCourses - 1) / 2)
+prerequisites[i].length == 2
+0 <= ai, bi <= numCourses - 1
+ai != bi
+All the pairs [ai, bi] are unique.
+The prerequisites graph has no cycles.
+1 <= queries.length <= 104
+0 <= ui, vi <= numCourses - 1
+ui != vi
 """
