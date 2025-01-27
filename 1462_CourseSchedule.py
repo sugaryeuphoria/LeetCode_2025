@@ -39,3 +39,6 @@ ui != vi
 """
 class Solution:
     def checkIfPrerequisite(self, numCourses: int, prerequisites: List[List[int]], queries: List[List[int]]) -> List[bool]:
+        # Initialize a reachability matrix
+        reachable = [[False] * numCourses for _ in range(numCourses)]
+        
