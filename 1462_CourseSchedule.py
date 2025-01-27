@@ -50,3 +50,6 @@ class Solution:
                 for j in range(numCourses):
                     if reachable[i][k] and reachable[k][j]:
                         reachable[i][j] = True
+
+        # Answer each query using the reachability matrix
+        return [reachable[u][v] for u, v in queries]
