@@ -35,3 +35,7 @@ from typing import List
 
 class Solution:
     def findMaxFish(self, grid: List[List[int]]) -> int:
+        from typing import List
+
+# DFS helper function to explore the grid
+        def dfs(r, c):
