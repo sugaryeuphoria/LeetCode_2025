@@ -31,3 +31,7 @@ n == grid[i].length
 1 <= m, n <= 10
 0 <= grid[i][j] <= 10
 """
+from typing import List
+
+class Solution:
+    def findMaxFish(self, grid: List[List[int]]) -> int:
