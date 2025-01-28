@@ -46,3 +46,26 @@ class Solution:
             fish_count = grid[r][c]
             # Mark this cell as visited by setting its fish count to 0
             grid[r][c] = 0
+            # Explore the four adjacent cells (up, down, left, right)
+            fish_count += dfs(r + 1, c)
+            fish_count += dfs(r - 1, c)
+            fish_count += dfs(r, c + 1)
+            fish_count += dfs(r, c - 1)
+            
+            return fish_count
+        
+        max_fish = 0
+        for i in range(len(grid)):
+            for j in range(len(grid[0])):
+                if grid[i][j] > 0:  # Start DFS if we find a water cell with fish
+                    max_fish = max(max_fish, dfs(i, j))
+        
+        return max_fish
+
+# Example usage
+solution = Solution()
+grid1 = [[0,2,1,0],[4,0,0,3],[1,0,0,4],[0,3,2,0]]
+grid2 = [[1,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,1]]
+
+print(solution.findMaxFish(grid1))  # Output: 7
+print(solution.findMaxFish(grid2))  # Output: 1
