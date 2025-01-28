@@ -44,3 +44,5 @@ class Solution:
                 return 0
             # Store the number of fish in the current cell
             fish_count = grid[r][c]
+            # Mark this cell as visited by setting its fish count to 0
+            grid[r][c] = 0
