@@ -23,4 +23,11 @@ Example 2:
 Input: grid = [[1,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,1]]
 Output: 1
 Explanation: The fisher can start at cells (0,0) or (3,3) and collect a single fish. 
+
+Constraints:
+
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 10
+0 <= grid[i][j] <= 10
 """
