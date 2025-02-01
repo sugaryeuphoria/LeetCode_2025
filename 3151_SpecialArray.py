@@ -44,3 +44,5 @@ class Solution(object):
         # If the array has only one element, it is special
         if len(nums) == 1:
             return True
+        # Iterate through the array and check adjacent pairs
+        for i in range(len(nums) - 1):
