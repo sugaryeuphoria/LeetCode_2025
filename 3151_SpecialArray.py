@@ -33,4 +33,9 @@ Output: false
 Explanation:
 
 nums[1] and nums[2] are both odd. So the answer is false.
+
+Constraints:
+
+1 <= nums.length <= 100
+1 <= nums[i] <= 100
 """
