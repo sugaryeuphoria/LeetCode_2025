@@ -41,3 +41,6 @@ Constraints:
 """
 class Solution(object):
     def isArraySpecial(self, nums):
+        # If the array has only one element, it is special
+        if len(nums) == 1:
+            return True
