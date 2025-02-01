@@ -46,3 +46,7 @@ class Solution(object):
             return True
         # Iterate through the array and check adjacent pairs
         for i in range(len(nums) - 1):
+
+            # Check if both elements in the pair have the same parity
+            if (nums[i] % 2) == (nums[i + 1] % 2):
+                return False
