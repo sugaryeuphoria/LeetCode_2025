@@ -50,3 +50,6 @@ class Solution(object):
             # Check if both elements in the pair have the same parity
             if (nums[i] % 2) == (nums[i + 1] % 2):
                 return False
+            
+        # If no pair has the same parity, the array is special
+        return True
