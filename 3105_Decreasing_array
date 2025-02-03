@@ -50,3 +50,12 @@ Constraints:
 """
 class Solution(object):
     def longestMonotonicSubarray(self, nums):
+      if not nums:
+            return 0
+
+        inc = dec = max_length = 1
+        
+        for i in range(1, len(nums)):
+            if nums[i] > nums[i - 1]:
+                inc += 1
+                dec = 1  # Reset decreasing count
