@@ -19,4 +19,10 @@ Input: s1 = "kelb", s2 = "kelb"
 Output: true
 Explanation: The two strings are already equal, so no string swap operation is required.
 
+Constraints:
+
+1 <= s1.length, s2.length <= 100
+s1.length == s2.length
+s1 and s2 consist of only lowercase English letters.
+
 """
