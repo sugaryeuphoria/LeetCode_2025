@@ -25,3 +25,9 @@ Constraints:
 1 <= nums[i] <= 104
 All elements in nums are distinct.
 """
+from collections import defaultdict
+
+class Solution:
+    def tupleSameProduct(self, nums):
+        product_count = defaultdict(int)
+        result = 0
