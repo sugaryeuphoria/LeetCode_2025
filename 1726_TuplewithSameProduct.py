@@ -18,4 +18,10 @@ Explanation: There are 16 valid tuples:
 (2,5,1,10) , (2,5,10,1) , (5,2,1,10) , (5,2,10,1)
 (2,10,4,5) , (2,10,5,4) , (10,2,4,5) , (10,2,5,4)
 (4,5,2,10) , (4,5,10,2) , (5,4,2,10) , (5,4,10,2)
+
+Constraints:
+
+1 <= nums.length <= 1000
+1 <= nums[i] <= 104
+All elements in nums are distinct.
 """
