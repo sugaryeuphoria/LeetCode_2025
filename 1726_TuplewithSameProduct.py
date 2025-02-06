@@ -37,3 +37,5 @@ class Solution:
                 product = nums[i] * nums[j]
                 result += product_count[product]
                 product_count[product] += 1
+                # Each valid tuple contributes 8 to the result
+        return result * 8
