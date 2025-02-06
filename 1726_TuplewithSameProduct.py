@@ -39,3 +39,6 @@ class Solution:
                 product_count[product] += 1
                 # Each valid tuple contributes 8 to the result
         return result * 8
+    # Example usage
+nums = [2, 3, 4, 6]
+print(Solution().tupleSameProduct(nums))
