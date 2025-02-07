@@ -54,3 +54,5 @@ class Solution:
         ans = []  # Initialize an empty list to store the results
         ballToColor = {}  # Initialize a dictionary to map each ball to its color
         colorCount = collections.Counter()
+        # Iterate through each query in the list of queries
+        for ball, color in queries:
