@@ -60,3 +60,6 @@ class Solution:
             if ball in ballToColor:
                 prevColor = ballToColor[ball]  # Get the previous color of the ball
                 colorCount[prevColor] -= 1
+                # If the count of the previous color becomes 0, remove it from the colorCount
+                if colorCount[prevColor] == 0:
+                    del colorCount[prevColor]
