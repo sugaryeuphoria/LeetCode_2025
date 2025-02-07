@@ -49,3 +49,8 @@ queries[i].length == 2
 import collections  # Import the collections module to use the Counter class
 
 class Solution:
+     # Define the method 'queryResults' that accepts limit and queries as input
+    def queryResults(self, limit: int, queries: list[list[int]]) -> list[int]:
+        ans = []  # Initialize an empty list to store the results
+        ballToColor = {}  # Initialize a dictionary to map each ball to its color
+        colorCount = collections.Counter()
