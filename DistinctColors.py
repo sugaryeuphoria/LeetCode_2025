@@ -56,3 +56,7 @@ class Solution:
         colorCount = collections.Counter()
         # Iterate through each query in the list of queries
         for ball, color in queries:
+            # Check if the ball already has a color assigned
+            if ball in ballToColor:
+                prevColor = ballToColor[ball]  # Get the previous color of the ball
+                colorCount[prevColor] -= 1
