@@ -65,3 +65,5 @@ class Solution:
                     del colorCount[prevColor]
                      # Update the ball to the new color
             ballToColor[ball] = color
+            # Increase the count of the new color
+            colorCount[color] += 1
