@@ -69,3 +69,5 @@ class Solution:
             colorCount[color] += 1
             # Append the number of distinct colors to the result list
             ans.append(len(colorCount))
+            # Return the final result containing the number of distinct colors after each query
+        return ans
