@@ -63,3 +63,5 @@ class Solution:
                 # If the count of the previous color becomes 0, remove it from the colorCount
                 if colorCount[prevColor] == 0:
                     del colorCount[prevColor]
+                     # Update the ball to the new color
+            ballToColor[ball] = color
