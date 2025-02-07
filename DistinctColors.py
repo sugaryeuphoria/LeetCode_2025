@@ -46,3 +46,6 @@ queries[i].length == 2
 0 <= queries[i][0] <= limit
 1 <= queries[i][1] <= 109
 """
+import collections  # Import the collections module to use the Counter class
+
+class Solution:
