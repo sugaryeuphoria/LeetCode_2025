@@ -67,3 +67,5 @@ class Solution:
             ballToColor[ball] = color
             # Increase the count of the new color
             colorCount[color] += 1
+            # Append the number of distinct colors to the result list
+            ans.append(len(colorCount))
