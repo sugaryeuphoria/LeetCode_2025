@@ -49,3 +49,7 @@ class NumberContainers:
                 self.number_to_indices[old_number].discard(index)  # Remove index from old number
                 if not self.number_to_indices[old_number]:  # Cleanup empty sets
                     del self.number_to_indices[old_number]
+                    self.index_to_number[index] = number  # Update mapping
+        if number not in self.number_to_indices:
+            self.number_to_indices[number] = set()
+        self.number_to_indices[number].add(index)
