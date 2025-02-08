@@ -53,3 +53,7 @@ class NumberContainers:
         if number not in self.number_to_indices:
             self.number_to_indices[number] = set()
         self.number_to_indices[number].add(index)
+        def find(self, number: int) -> int:
+        if number not in self.number_to_indices or not self.number_to_indices[number]:
+            return -1
+        return min(self.number_to_indices[number])
