@@ -35,3 +35,10 @@ Constraints:
 1 <= index, number <= 109
 At most 105 calls will be made in total to change and find.
 """
+import heapq
+
+class NumberContainers:
+
+    def __init__(self):
+        self.index_to_number = {}  # Maps index -> number
+        self.number_to_indices = {}
