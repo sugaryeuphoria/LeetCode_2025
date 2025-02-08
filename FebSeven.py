@@ -42,3 +42,10 @@ class NumberContainers:
     def __init__(self):
         self.index_to_number = {}  # Maps index -> number
         self.number_to_indices = {}
+        ef change(self, index: int, number: int) -> None:
+        if index in self.index_to_number:
+            old_number = self.index_to_number[index]
+            if old_number != number:
+                self.number_to_indices[old_number].discard(index)  # Remove index from old number
+                if not self.number_to_indices[old_number]:  # Cleanup empty sets
+                    del self.number_to_indices[old_number]
